@@ -9,6 +9,6 @@ You can find me here:
 ## Let the river run
 ### Let all the dreamers wake the nation
 
-Build by yours truly:<br />
-[https://bryanczar.com](https://bryanczar.com)
+Build by yours truly:
+[bryanczar.com](https://bryanczar.com)
 

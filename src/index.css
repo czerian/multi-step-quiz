@@ -11,3 +11,55 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+* 
+{margin: 0;padding: 0;outline: none;border: none;
+-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.cf:before, .cf:after
+{content: " ";display: block; }
+.cf
+{ *zoom: 1; }
+.cf:after
+{clear: both;}
+.lft
+{float: left;}
+.rit
+{float: right;}
+button, button:focus
+{outline: none;}
+
+.fx
+{display: -webkit-flex;display: -ms-flexbox;display: flex;flex: 1;}
+.fxwp
+{flex-wrap: wrap;}
+
+.fxdc
+{-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;}
+.fxdr
+{-webkit-flex-direction: row;-ms-flex-direction: row;flex-direction: row;}
+
+.fxjcc
+{-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;}
+.fxjcfs
+{-webkit-justify-content: flex-start;-ms-flex-pack: flex-start;justify-content: flex-start;}
+.fxjcfe
+{  justify-content: flex-end;}
+.fxjcsb
+{  justify-content: space-between;}
+.fxjcsa
+{  justify-content: space-around;}
+.fxjcse
+{  justify-content: space-evenly;}
+
+.fxaic
+{-webkit-align-items: center;-ms-flex-align: center;align-items: center;}
+.fxaifs
+{-webkit-align-items: flex-start;-ms-flex-align: flex-start;align-items: flex-start;}
+.fxaife
+{-webkit-align-items: flex-end;-ms-flex-align: flex-end;align-items: flex-end;}
+
+a:visited, a:active, a:link, a:hover
+{text-decoration:none;padding:0;margin:0;outline:0;border:none;color: gold;
+  text-transform:inherit;line-height:inherit;font-size: inherit;font-family: Ubuntu, sans-serif;}
+a:hover
+{color: dodgerblue;}
