@@ -6,7 +6,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-       stepCount: -1, result: 10,
+       stepCount: -1, result: 0,
     }
   }
   
@@ -37,6 +37,7 @@ qsnsObj = {
       "optn": ["Albert Einstein", "Alexander Graham Bell", "Issac Newton", "Marie Curie"],
       "ca": "Alexander Graham Bell"
           },
+          
         ]
 }
 
@@ -66,35 +67,35 @@ results = () => {
   switch (true) {
     case (result === this.qsnsObj.qsns.length):
         return (
-          <>
+          <div>
           {this.Score()}
-          <p>Congratulations, Perfect Score: Well Done</p>
+          <h1>Congratulations, Perfect Score: Well Done</h1>
           {this.tryAgainButton()}
-          </>
+          </div>
         )
     case (result >= this.qsnsObj.qsns.length/2 && result < this.qsnsObj.qsns.length):
         return (
-          <>
+          <div>
           {this.Score()}
-          <p>Good Work</p>
+          <h2>Good Work</h2>
           {this.tryAgainButton()}
-          </>
+          </div>
         )
     case (result <= this.qsnsObj.qsns.length/2):
         return (
-          <>
+          <div>
           {this.Score()}
-          <p>Poor Perfomance</p>
+          <h2>Poor Perfomance</h2>
           {this.tryAgainButton()}
-          </>
+          </div>
         )
     default:
       return (
-        <>
+        <div>
         {this.Score()}
-        <p>Not Bad</p>
+        <h3>Not Bad</h3>
         {this.tryAgainButton()}
-        </>
+        </div>
       );
   }
 }
@@ -140,7 +141,9 @@ answer = async e => {
 render() {
     const {stepCount} = this.state
     return(
-      stepCount === -1 ? this.landing() : stepCount === this.qsnsObj.qsns.length ? this.results() : <this.Quiz qsno={stepCount} />
+      <div className='fx fxdc fxjcc quiz'>
+      {stepCount === -1 ? this.landing() : stepCount === this.qsnsObj.qsns.length ? this.results() : <this.Quiz qsno={stepCount} />}
+      </div>
     )
   }
 }
